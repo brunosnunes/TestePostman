@@ -1,0 +1,422 @@
+{
+	"id": "e3730fbb-368d-4222-be89-79526cb15ea9",
+	"name": "Deilivery_Much",
+	"timestamp": "2021-03-14T02:13:52.942Z",
+	"collection_id": "5faf48e3-8635-46e3-8bc3-addfbf97dcb4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "917c381d-e2fd-4d4d-8350-0d4768248bdc",
+			"name": "Limite maximo (en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/10000",
+			"time": 522,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"status 200": true
+			},
+			"testPassFailCounts": {
+				"status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				522
+			],
+			"allTests": [
+				{
+					"status 200": true
+				}
+			]
+		},
+		{
+			"id": "b2188216-10ab-42a8-9bdb-65565f64962e",
+			"name": "Limite minimo(en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/-10000",
+			"time": 498,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"status 200": true
+			},
+			"testPassFailCounts": {
+				"status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				498
+			],
+			"allTests": [
+				{
+					"status 200": true
+				}
+			]
+		},
+		{
+			"id": "4d1bd704-d729-49b0-b016-ed9590a85327",
+			"name": "Limite maximo (pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/10000",
+			"time": 446,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"status 200": true
+			},
+			"testPassFailCounts": {
+				"status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				446
+			],
+			"allTests": [
+				{
+					"status 200": true
+				}
+			]
+		},
+		{
+			"id": "6822f258-56ca-472d-a7fb-ee2ac7e5be69",
+			"name": "Limite minimo(pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/-10000",
+			"time": 495,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"status 200": true
+			},
+			"testPassFailCounts": {
+				"status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				495
+			],
+			"allTests": [
+				{
+					"status 200": true
+				}
+			]
+		},
+		{
+			"id": "424ef28c-5880-41d0-b7f6-1209e5f2e54f",
+			"name": "Limite maximo invalido(en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/10001",
+			"time": 487,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"status 400": false,
+				"dados invalidos": true
+			},
+			"testPassFailCounts": {
+				"status 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"dados invalidos": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				487
+			],
+			"allTests": [
+				{
+					"status 400": false,
+					"dados invalidos": true
+				}
+			]
+		},
+		{
+			"id": "52786058-fb3a-48e9-886a-f807974a7f88",
+			"name": "Limite maximo invalido(pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/10001",
+			"time": 420,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"status 400": true,
+				"dados invalidos": true
+			},
+			"testPassFailCounts": {
+				"status 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"dados invalidos": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				420
+			],
+			"allTests": [
+				{
+					"status 400": true,
+					"dados invalidos": true
+				}
+			]
+		},
+		{
+			"id": "c82e141c-80f6-4d32-9e01-f421b4ed3e5c",
+			"name": "Limite minimo invalido (en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/-10001",
+			"time": 420,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"status 400": false,
+				"dados invalidos": true
+			},
+			"testPassFailCounts": {
+				"status 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"dados invalidos": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				420
+			],
+			"allTests": [
+				{
+					"status 400": false,
+					"dados invalidos": true
+				}
+			]
+		},
+		{
+			"id": "5a69b304-b704-48b7-9f70-4b8a5fe59bd3",
+			"name": "Limite minimo invalido (pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/-10001",
+			"time": 428,
+			"responseCode": {
+				"code": 400,
+				"name": "BAD REQUEST"
+			},
+			"tests": {
+				"status 400": true,
+				"dados invalidos": true
+			},
+			"testPassFailCounts": {
+				"status 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"dados invalidos": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				428
+			],
+			"allTests": [
+				{
+					"status 400": true,
+					"dados invalidos": true
+				}
+			]
+		},
+		{
+			"id": "454de298-4411-4ada-afae-8da5421e1b41",
+			"name": "POST(en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/10000",
+			"time": 498,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				498
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "134600e8-5ebc-4a73-9561-aca30b4c1575",
+			"name": "POST(pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/10000",
+			"time": 512,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				512
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "73872b49-31c7-4952-ae72-6bfbf755e9f4",
+			"name": "PUT(en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/10000",
+			"time": 434,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				434
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "45dd9628-0a7d-44a6-a75c-4a7319fd6d3c",
+			"name": "PUT(pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/10000",
+			"time": 432,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				432
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3bcf914e-2cf9-47de-bf6b-06dbaefe7bb2",
+			"name": "DELETE(en-US)",
+			"url": "http://challengeqa.staging.devmuch.io/en/10000",
+			"time": 495,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				495
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b44364a7-bcf8-46da-87fd-3fa028ce9726",
+			"name": "DELETE(pt-BR)",
+			"url": "http://challengeqa.staging.devmuch.io/10000",
+			"time": 473,
+			"responseCode": {
+				"code": 405,
+				"name": "METHOD NOT ALLOWED"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				473
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6560,
+	"collection": {
+		"requests": [
+			{
+				"id": "917c381d-e2fd-4d4d-8350-0d4768248bdc",
+				"method": "GET"
+			},
+			{
+				"id": "b2188216-10ab-42a8-9bdb-65565f64962e",
+				"method": "GET"
+			},
+			{
+				"id": "4d1bd704-d729-49b0-b016-ed9590a85327",
+				"method": "GET"
+			},
+			{
+				"id": "6822f258-56ca-472d-a7fb-ee2ac7e5be69",
+				"method": "GET"
+			},
+			{
+				"id": "424ef28c-5880-41d0-b7f6-1209e5f2e54f",
+				"method": "GET"
+			},
+			{
+				"id": "52786058-fb3a-48e9-886a-f807974a7f88",
+				"method": "GET"
+			},
+			{
+				"id": "c82e141c-80f6-4d32-9e01-f421b4ed3e5c",
+				"method": "GET"
+			},
+			{
+				"id": "5a69b304-b704-48b7-9f70-4b8a5fe59bd3",
+				"method": "GET"
+			},
+			{
+				"id": "454de298-4411-4ada-afae-8da5421e1b41",
+				"method": "POST"
+			},
+			{
+				"id": "134600e8-5ebc-4a73-9561-aca30b4c1575",
+				"method": "POST"
+			},
+			{
+				"id": "73872b49-31c7-4952-ae72-6bfbf755e9f4",
+				"method": "PUT"
+			},
+			{
+				"id": "45dd9628-0a7d-44a6-a75c-4a7319fd6d3c",
+				"method": "PUT"
+			},
+			{
+				"id": "3bcf914e-2cf9-47de-bf6b-06dbaefe7bb2",
+				"method": "DELETE"
+			},
+			{
+				"id": "b44364a7-bcf8-46da-87fd-3fa028ce9726",
+				"method": "DELETE"
+			}
+		]
+	}
+}

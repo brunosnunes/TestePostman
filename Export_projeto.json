@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "5faf48e3-8635-46e3-8bc3-addfbf97dcb4",
+		"name": "Deilivery_Much",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"item": [
+				{
+					"name": "Limite maximo (en-US)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "full",
+									"value": "nine thousand",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"10000"
+							]
+						},
+						"description": "Teste de limite maximo permitido no idioma en-US."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite minimo(en-US)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/-10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"-10000"
+							]
+						},
+						"description": "Teste de limite minimo permitido no idioma en-US."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite maximo (pt-BR)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"10000"
+							]
+						},
+						"description": "Teste de limite maximo permitido no idioma pt-BR."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite minimo(pt-BR)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/-10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"-10000"
+							]
+						},
+						"description": "Teste de limite minimo permitido no idioma en-US."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite maximo invalido(en-US)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"dados invalidos\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Invalid data\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/10001",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"10001"
+							]
+						},
+						"description": "Teste de limite maximo não permitido no idioma en-US."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite maximo invalido(pt-BR)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"dados invalidos\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Invalid data\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/10001",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"10001"
+							]
+						},
+						"description": "Teste de limite maximo não permitido no idioma pt-BR."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite minimo invalido (en-US)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"dados invalidos\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Invalid data\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/-10001",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"-10001"
+							]
+						},
+						"description": "Teste de limite minimo não permitido no idioma en-US."
+					},
+					"response": []
+				},
+				{
+					"name": "Limite minimo invalido (pt-BR)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"dados invalidos\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Invalid data\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/-10001",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"-10001"
+							]
+						},
+						"description": "Teste de limite minio não permitido no idioma pt-BR."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Requisições basicas n permitidas",
+			"item": [
+				{
+					"name": "POST(en-US)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "valor",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"10000"
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (en-US)."
+					},
+					"response": []
+				},
+				{
+					"name": "POST(pt-BR)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "extenso",
+									"value": "10000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"10000"
+							],
+							"query": [
+								{
+									"key": "extenso",
+									"value": "nove",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (pt_BR)"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT(en-US)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"10000"
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (en-US)."
+					},
+					"response": []
+				},
+				{
+					"name": "PUT(pt-BR)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"10000"
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (pt-BR)"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE(en-US)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/en/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"en",
+								"10000"
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (en-US)."
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE(pt-BR)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://challengeqa.staging.devmuch.io/10000",
+							"protocol": "http",
+							"host": [
+								"challengeqa",
+								"staging",
+								"devmuch",
+								"io"
+							],
+							"path": [
+								"10000"
+							]
+						},
+						"description": "Tipo de requisição não permitida para este serviço (pt-BR)"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
